@@ -18,13 +18,13 @@ class AppSeeder extends Seeder
         //
         User::factory(1)->admin()->create();
         User::factory(5)->create()->each(function ($user) {
-            Todo::factory(rand(0, 2))->create([
+            Todo::factory(rand(0, 3))->create([
                 'user_id' => $user->id
             ]);
-            Todo::factory(rand(0, 1))->softdeleted()->create([
+            Todo::factory(rand(1, 2))->softdeleted()->create([
                 'user_id' => $user->id
             ]);
-            Todo::factory(rand(0, 1))->completed()->create([
+            Todo::factory(rand(1, 2))->completed()->create([
                 'user_id' => $user->id
             ]);
         });

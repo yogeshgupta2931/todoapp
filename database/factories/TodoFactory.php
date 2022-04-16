@@ -20,7 +20,7 @@ class TodoFactory extends Factory
             //
             'title' => $this->faker->sentence(),
             'description' => $this->faker->paragraph(),
-            'due_date' => $this->faker->dateTime(),
+            'due_date' => $this->faker->dateTimeBetween('-1 month', '+1 month')
         ];
     }
 
