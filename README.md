@@ -30,9 +30,10 @@ TodoApp is a fun Laravel application that has the following features:
 
 - This should install all the dependencies and create database with seeders required for the project
 
-### Admin and User Login
+## Admin and User Login
 
 - Password for all accounts is `password`
+- Admin account is with role_id = 1, User accounts are with role_id = 2 in users table
 - Email Id for accounts can be fetched from `users` table
 
 ### Tested on System with
