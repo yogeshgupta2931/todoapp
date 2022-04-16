@@ -30,7 +30,7 @@ TodoApp is a fun Laravel application that has the following features:
 -   Password for all accounts is `password`
 -   Email Id for accounts can be fetched from `users` table
 
-### Tested on System configuration
+### Tested on System with
 
 -   git
 -   php 8+
