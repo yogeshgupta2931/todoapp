@@ -1,0 +1,57 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+//Noty - for notify pop-ups
+@import "~noty/src/noty.scss";
+@import "~noty/src/themes/mint.scss";
+
+//Importing fort-awesome
+@import '~@fortawesome/fontawesome-free/scss/solid';
+@import '~@fortawesome/fontawesome-free/scss/fontawesome';
+//Importing flatpickr
+@import "~flatpickr/dist/flatpickr.css";
+
+
+.todo {margin: 5px; padding: 0px 5px 10px; border-bottom: 1px solid #e1e1e1;}
+
+.todo_title {font-size: 20px;}
+
+.todo_description {font-size: 14px;}
+
+.todo_due {font-size: 14px;}
+
+.todo_edit {float: left; padding: 5px 10px; cursor: pointer; color: #5ac039; margin: 0px 5px;}
+
+.todo_delete {float: left; padding: 5px 10px; cursor: pointer; color: #c81d1d; margin: 0px 5px;}
+
+.todo_restore {float: left; padding: 5px 10px; cursor: pointer; color: #c81d1d; margin: 0px 5px;}
+
+.todo_edit:hover,.todo_delete:hover, .todo_restore:hover{background: #ededed; border-radius:4px;}
+
+.completed_todo {text-decoration: line-through;}
+
+.add_new_button{cursor: pointer;}
+
+span.no-strike-trough{text-decoration: none;}
+
+.new_todo {margin: 15px;}
+
+.new_todo input, .new_todo textarea {border: 0px;background: none;}
+
+.new_todo input:focus, .new_todo textarea:focus {box-shadow: none;}
+
+.add_new_panel{display:none; border: 1px solid #e1e1e1; padding: 10px; border-radius: 5px;}
+
+.error {font-size: 14px; color: #c81d1d; font-style: italic; text-indent: 10px;}
+
+.overdue{color:#c81d1d;}
+
+.todo .todo_controls{visibility: hidden;}
+
+.todo:hover .todo_controls{visibility: visible;}
